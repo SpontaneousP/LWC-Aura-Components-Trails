@@ -1,0 +1,29 @@
+<template>
+    <template for:each={userDetails} for:item="user">
+        <div class="card" key={user.id}>
+            <img src={user.imageUrl} alt={user.name} style="width:100%">
+            <p class="title">{user.title}</p>
+            <p>Rent : {user.price} INR</p>
+            <lightning-button label="Click for rent" onclick={clickme} value={user.siteurl}></lightning-button> <br/>
+        <br/>
+    </div>
+    </template>
+    <template for:each={userDetails1} for:item="user">
+        <div class="card" key={user.id}>
+            <img src={user.imageUrl} alt={user.name} style="width:100%">
+            <p class="title">{user.title}</p>
+            <p>Rent : {user.price} INR</p>
+            <lightning-button label="Click for rent" onclick={clickme} value={user.siteurl}></lightning-button> <br/>
+        <br/>
+    </div>
+    </template>
+    <template for:each={userDetails2} for:item="user">
+        <div class="card" key={user.id}>
+            <img src={user.imageUrl} alt={user.name} style="width:100%">
+            <p class="title">{user.title}</p>
+            <p>Rent : {user.price} INR</p>
+            <lightning-button label="Click for rent" onclick={clickme} value={user.siteurl}></lightning-button> <br/>
+        <br/>
+    </div>
+    </template>
+</template>

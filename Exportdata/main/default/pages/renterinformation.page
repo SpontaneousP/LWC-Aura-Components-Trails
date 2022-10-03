@@ -1,0 +1,29 @@
+<apex:page StandardController="Renter_Information__c"  setup="false" sidebar="false" showheader="true" tabStyle="Renter_Information__c">
+<apex:sectionHeader title="Renter Information Edit" subtitle="New Customer"/>
+<apex:form >
+    <apex:pageblock title="Customer Edit">
+    
+        <apex:pageblockButtons location="Both">
+            <apex:commandButton value="Save" action="{!Save}"/>
+            <apex:commandButton value="Save & New" action="{!Save}"/>
+            <apex:CommandButton value="Cancel" action="{!Cancel}"/>
+        </apex:pageblockButtons>
+
+
+<center><apex:image url="https://files.keepingcurrentmatters.com/wp-content/uploads/2018/02/13162238/20180221-Share-STM-705x385.jpg" width="500" height="200"/></center> 
+	 <apex:pageblocksection title="Information" columns="2" collapsible="true">
+            <Apex:inputfield value="{!Renter_Information__c.Name}" required="true"/>
+            <Apex:inputfield value="{!Renter_Information__c.Email_Id__c}"/>
+	    <Apex:inputfield value="{!Renter_Information__c.Phone_no__c}"/>
+	    <Apex:inputfield value="{!Renter_Information__c.Rental_Unit_Name__c}" required="true"/>
+	<Apex:inputfield value="{!Renter_Information__c.Approval__c}"/>
+	<Apex:inputfield value="{!Renter_Information__c.Customer_Name__c}" required="true"/>
+	<Apex:inputfield value="{!Renter_Information__c.Approval_Status__c}"/>
+	 </apex:pageblocksection>
+
+
+
+
+  </apex:pageblock>
+</apex:form>
+</apex:page>

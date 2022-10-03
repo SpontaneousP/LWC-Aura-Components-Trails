@@ -1,0 +1,28 @@
+<apex:page StandardController="Statement__c"  setup="false" sidebar="false" showheader="true" tabStyle="Statement__c">
+<apex:sectionHeader title="Statement Edit" subtitle="New Customer"/>
+<apex:form >
+    <apex:pageblock title="Statement Edit">
+
+	<apex:pageblockButtons location="Both">
+            <apex:commandButton value="Save" action="{!Save}"/>
+            <apex:commandButton value="Save & New" action="{!Save}"/>
+            <apex:CommandButton value="Cancel" action="{!Cancel}"/>
+        </apex:pageblockButtons>
+<center><apex:image url="https://149443033.v2.pressablecdn.com/wp-content/uploads/2021/01/statements.png" width="800" height="200"/></center> 
+	<apex:pageblocksection title="Information" columns="2" collapsible="true">
+            <Apex:inputfield value="{!Statement__c.Name}" required="true"/>
+	    <Apex:inputfield value="{!Statement__c.Amount__c}" />
+	    <Apex:inputfield value="{!Statement__c.Additional_Fees__c}" />
+	    <Apex:inputfield value="{!Statement__c.Rental_Agreement_Name__c}" required="true"/>
+	    <Apex:inputfield value="{!Statement__c.Statement_Date__c}" />
+	   <Apex:inputfield value="{!Statement__c.Due_Date__c}" />
+	   <Apex:inputfield value="{!Statement__c.Status__c}" />
+	   <Apex:inputfield value="{!Statement__c.Quick_Payment__c}" />
+
+
+</apex:pageblocksection>
+
+
+  </apex:pageblock>
+</apex:form>
+</apex:page>

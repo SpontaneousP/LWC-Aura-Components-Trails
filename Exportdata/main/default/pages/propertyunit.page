@@ -1,0 +1,34 @@
+<apex:page StandardController="Property_Unit__c"  setup="false" sidebar="false" showheader="true" tabStyle="Property_Unit__c">
+<apex:sectionHeader title="Property Unit Edit" subtitle="New Property Unit"/>
+<apex:form >
+    <apex:pageblock title="Property Unit Edit">
+    
+        <apex:pageblockButtons location="Both">
+            <apex:commandButton value="Save" action="{!Save}"/>
+            <apex:commandButton value="Save & New" action="{!Save}"/>
+            <apex:CommandButton value="Cancel" action="{!Cancel}"/>
+        </apex:pageblockButtons>
+
+	<apex:pageblocksection title="Information" columns="2" collapsible="true">
+	<Apex:inputfield value="{!Property_Unit__c.Name}" required="true"/>
+	<Apex:inputfield value="{!Property_Unit__c.Unit__c}"/>
+	<Apex:inputfield value="{!Property_Unit__c.Apartment_Image__c}"/>
+	<Apex:inputfield value="{!Property_Unit__c.Floors__c}"/>
+	<Apex:inputfield value="{!Property_Unit__c.Number_of_Bathrooms__c}"/>
+	<Apex:inputfield value="{!Property_Unit__c.Number_of_Parking_Spaces__c	}"/>
+	<Apex:inputfield value="{!Property_Unit__c.Number_of_Bedrooms__c}"/>
+	<Apex:inputfield value="{!Property_Unit__c.Laundry__c}"/>
+	<Apex:inputfield value="{!Property_Unit__c.Garage__c}"/>
+	<Apex:inputfield value="{!Property_Unit__c.Furniture_Included__c}"/>
+	<Apex:inputfield value="{!Property_Unit__c.Total_Square_feet__c}"/>
+	<Apex:inputfield value="{!Property_Unit__c.Pets_Allowed__c}"/>
+	<Apex:inputfield value="{!Property_Unit__c.Air_Conditioning__c}"/>
+	<Apex:inputfield value="{!Property_Unit__c.Appliances_Included__c}"/>
+	<Apex:inputfield value="{!Property_Unit__c.Heating__c}"/>
+	<Apex:inputfield value="{!Property_Unit__c.Utilities_Included__c}"/>
+
+
+</apex:pageblocksection>
+    </apex:pageblock>
+</apex:form>
+</apex:page>

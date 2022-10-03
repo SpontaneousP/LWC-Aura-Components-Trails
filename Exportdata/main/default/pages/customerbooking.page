@@ -1,0 +1,24 @@
+<apex:page StandardController="CustomerInfo__c"  setup="false" sidebar="false" showheader="true" tabStyle="CustomerInfo__c">
+<apex:sectionHeader title="Customer Edit" subtitle="New Customer"/>
+<apex:form >
+    <apex:pageblock title="Customer Edit">
+    
+        <apex:pageblockButtons location="Both">
+            <apex:commandButton value="Save" action="{!Save}"/>
+            <apex:commandButton value="Save & New" action="{!Save}"/>
+            <apex:CommandButton value="Cancel" action="{!Cancel}"/>
+        </apex:pageblockButtons>
+        <center><apex:image url="https://media.glassdoor.com/template/o/256653/booking-com-template-1487079903605.jpg" width="500" height="200"/></center> 
+        <apex:pageblocksection title="Information" columns="2" collapsible="true">
+            <Apex:inputfield value="{!CustomerInfo__c.Name}" required="true"/>
+             <Apex:inputfield value="{!CustomerInfo__c.Property_Unit_Name__c}" required="true"/>
+            <Apex:inputfield value="{!CustomerInfo__c.Phone_no__c}" />
+            <Apex:inputfield value="{!CustomerInfo__c.Address__c}"/>
+            <Apex:inputfield value="{!CustomerInfo__c.Email_Id__c}"/>    
+        </apex:pageblocksection>
+        
+        
+
+    </apex:pageblock>
+</apex:form>
+</apex:page>

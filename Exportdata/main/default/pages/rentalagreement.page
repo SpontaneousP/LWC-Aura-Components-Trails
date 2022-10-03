@@ -1,0 +1,30 @@
+<apex:page StandardController="Rental_Aggrement__c"  setup="false" sidebar="false" showheader="true" tabStyle="Rental_Aggrement__c">
+<apex:sectionHeader title="Rental Agreement Edit" subtitle="New Customer"/>
+<apex:form >
+    <apex:pageblock title="Rental Agreement Edit">
+    
+        <apex:pageblockButtons location="Both">
+            <apex:commandButton value="Save" action="{!Save}"/>
+            <apex:commandButton value="Save & New" action="{!Save}"/>
+            <apex:CommandButton value="Cancel" action="{!Cancel}"/>
+        </apex:pageblockButtons>
+<center><apex:image url="https://cornerpointlaw.com/wp-content/uploads/2019/03/agreement-3489902_1920.jpg" width="600" height="200"/></center> 
+	 <apex:pageblocksection title="Information" columns="2" collapsible="true">
+            <Apex:inputfield value="{!Rental_Aggrement__c.Name}" required="true"/>
+            <Apex:inputfield value="{!Rental_Aggrement__c.Rental_Unit_Name__c}" required="true"/>
+	    <Apex:inputfield value="{!Rental_Aggrement__c.Renter_Info_Name__c}" required="true"/>
+          <Apex:inputfield value="{!Rental_Aggrement__c.CustomerInfo_Name__c}" required="true"/>
+	<Apex:inputfield value="{!Rental_Aggrement__c.Deposite__c}" />
+	<Apex:inputfield value="{!Rental_Aggrement__c.Rental_Amount__c}" />
+	<Apex:inputfield value="{!Rental_Aggrement__c.Start_Date__c}" />
+	<Apex:inputfield value="{!Rental_Aggrement__c.End_Date__c}" />
+	<Apex:inputfield value="{!Rental_Aggrement__c.Renter_EmailId__c}" />
+	<Apex:inputfield value="{!Rental_Aggrement__c.Customer_EmailId__c}" />
+	</apex:pageblocksection>
+
+
+  </apex:pageblock>
+    
+
+</apex:form>
+</apex:page>

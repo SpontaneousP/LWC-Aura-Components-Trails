@@ -1,0 +1,24 @@
+<apex:page StandardController="Property_Maintenance__c"  setup="false" sidebar="false" showheader="true" tabStyle="Property_Maintenance__c">
+<apex:sectionHeader title="Property Maintenance Edit" subtitle="New Customer"/>
+<apex:form >
+    <apex:pageblock title="Property Maintenance Edit">
+
+	<apex:pageblockButtons location="Both">
+            <apex:commandButton value="Save" action="{!Save}"/>
+            <apex:commandButton value="Save & New" action="{!Save}"/>
+            <apex:CommandButton value="Cancel" action="{!Cancel}"/>
+        </apex:pageblockButtons>
+<center><apex:image url="https://portal.fixdrepair.com/wp-content/uploads/2016/08/Handyman-with-tools-000061421328_XXXLarge-1024x740.jpg" width="500" height="200"/></center> 
+	<apex:pageblocksection title="Information" columns="2" collapsible="true">
+            <Apex:inputfield value="{!Property_Maintenance__c.Name}" required="true"/>
+	    <Apex:inputfield value="{!Property_Maintenance__c.No_of_Maintainance_staff__c}" />
+	    <Apex:inputfield value="{!Property_Maintenance__c.Property_Maintenance__c}" />
+	    <Apex:inputfield value="{!Property_Maintenance__c.Property_Unit_Name__c}" required="true"/>
+	    <Apex:inputfield value="{!Property_Maintenance__c.Renter_Name__c}" required="true"/>
+
+</apex:pageblocksection>
+
+
+  </apex:pageblock>
+</apex:form>
+</apex:page>
