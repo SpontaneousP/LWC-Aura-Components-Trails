@@ -1,1 +1,1 @@
-# LWC-Aura-Components-Trails-
+# LWC-Aura-Components-Trails
